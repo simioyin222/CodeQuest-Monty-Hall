@@ -1,0 +1,64 @@
+In a typical React application, the index.js file is responsible for rendering the main App component and serving as the entry point of the application.
+
+Here's how you can connect everything together:
+
+In index.js, you should import the App component and render it using ReactDOM.render or ReactDOM.createRoot (depending on your React version). Here's an example:
+jsx
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+Make sure you have a <div> element with the id root in your index.html file. This is where your React application will be mounted. Here's an example:
+html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeQuest: Monty Hall Challenge</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+In your App.js file, you should import the necessary components (Stage, Puzzle, StartGame, DoorSelection, GameManager) and render them based on the game state. You've already set up the basic structure for this in the provided App.js code.
+The other components (Stage.js, Puzzle.js, StartGame.js, DoorSelection.js, GameManager.js) should be implemented as separate files and imported into App.js as needed.
+The backend server (backend/index.js) should be started separately from the frontend. It will handle the API requests coming from the frontend components.
+To run the application:
+
+Start the backend server by running the appropriate command (e.g., node backend/index.js or npm start if you have defined a start script in package.json).
+Start the frontend development server by running the appropriate command (e.g., npm start or yarn start) in the frontend directory.
+Open your web browser and navigate to the specified URL (e.g., http://localhost:3000) to see the application running.
+When you access the application in the browser, the index.js file will be loaded, and it will render the App component. The App component will then manage the game flow and render the appropriate components based on the game state.
+
+The frontend components will communicate with the backend API endpoints as needed (e.g., when starting a new game, selecting a door, submitting an answer) to retrieve and update data.
+
+
+
+
+----------------------------------------------------------------
+
+In StartGame.js, when the user selects a door and clicks the "Start Game" button, the handleStartGame function is called. This function sends a POST request to the /api/game/initialSelection endpoint with the selected door number. The backend should handle this request, create a new game session, and return the game session ID.
+
+In DoorSelection.js, when the user selects a door and clicks the "Reveal Hard Puzzle" button, the handleRevealHardPuzzle function is called. This function sends a GET request to the /api/game/revealHardPuzzle/:gameSessionId endpoint, passing the game session ID as a parameter. The backend should handle this request, determine the hard puzzle to reveal based on the game logic, and return the revealed puzzle.
+
+Also in DoorSelection.js, when the user confirms their final door selection by clicking the "Confirm Final Selection" button, the handleFinalSelection function is called. This function sends a POST request to the /api/game/finalSelection/:gameSessionId endpoint, passing the game session ID as a parameter and the selected door number in the request body. The backend should handle this request, retrieve the selected puzzle based on the door number, and return the puzzle.
+
+In Puzzle.js, when the user submits their answer, the handleSubmit function is called. This function sends a POST request to the /api/submit-answer endpoint with the user's answer in the request body. The backend should handle this request, check the correctness of the answer, update the score if necessary, and return whether the answer is correct or not.
+
+In GameManager.js, the fetchGameState function is called when the component mounts (i.e., when the game session ID changes). This function sends a GET request to the /api/game-state/:gameSessionId endpoint, passing the game session ID as a parameter. The backend should handle this request and return the current game state (stage, score, etc.) for the given game session.
+
+Also in GameManager.js, the updateGameState function is called when the "Update Game State" button is clicked. This function sends a PUT request to the /api/game-state endpoint with the updated game state (stage, selected door, correctness) in the request body. The backend should handle this request, update the game state in the database, and return the updated game state.
+
+To ensure smooth communication between the frontend and backend, make sure that the API endpoints in the backend match the ones used in the frontend requests. Also, ensure that the necessary data is being passed correctly between the frontend and backend.
+
+Additionally, you'll need to set up the backend server to handle these API requests. In the provided backend code (index.js), you have defined the API endpoints and their corresponding handler functions. Make sure to start the server and establish a connection to the MongoDB database using the provided connection URL.

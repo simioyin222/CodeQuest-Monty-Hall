@@ -1,0 +1,49 @@
+Making a POST request to /api/puzzles
+
+cURL:
+curl -X POST -H "Content-Type: application/json" -d '{
+  "question": "What is the capital of Germany?",
+  "answer": "Berlin",
+  "difficulty": "easy",
+  "stage": "1"
+}' http://localhost:3000/api/puzzles
+
+
+Postman: Set method to post, url http://localhost:3000/api/puzzles, set body to "raw", content type to JSON:
+{
+  "question": "What is the capital of Germany?",
+  "answer": "Berlin",
+  "difficulty": "easy",
+  "stage": "1"
+}
+
+Or, probably the slickest was, using Axios in a React component. Looks pretty easy, and we could make something reusable:
+
+import React from 'react';
+import axios from 'axios';
+
+const CreatePuzzle = () => {
+  const handleCreatePuzzle = async () => {
+    try {
+      const puzzleData = {
+        question: 'What is the capital of Germany?',
+        answer: 'Berlin',
+        difficulty: 'easy',
+        stage: '1',
+      };
+
+      const response = await axios.post('/api/puzzles', puzzleData);
+      console.log('Puzzle created:', response.data);
+    } catch (error) {
+      console.error('Error creating puzzle:', error);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={handleCreatePuzzle}>Create Puzzle</button>
+    </div>
+  );
+};
+
+export default CreatePuzzle;

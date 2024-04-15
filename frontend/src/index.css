@@ -1,0 +1,1234 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Main Menu */
+.main-menu {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-menu .div {
+  background-image: url(./img/1a6e8bd3-051c-4fcf-b2bd-8e6a7194b127.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1011px;
+  position: relative;
+  width: 1443px;
+}
+
+.main-menu .text-wrapper {
+  color: #fffb98;
+  font-family: "Inknut Antiqua-ExtraBold", Helvetica;
+  font-size: 48px;
+  font-weight: 800;
+  left: 137px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 337px;
+  width: 332px;
+}
+
+.main-menu .text-wrapper-2 {
+  color: #fffb98;
+  font-family: "Inknut Antiqua-ExtraBold", Helvetica;
+  font-size: 48px;
+  font-weight: 800;
+  left: 991px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 337px;
+  width: 332px;
+}
+
+.main-menu .created-by {
+  color: #000000;
+  font-family: "Inknut Antiqua-Black", Helvetica;
+  font-size: 15px;
+  font-weight: 900;
+  left: 1112px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 859px;
+  width: 320px;
+}
+
+/* Gameplay-Puzzle Selection */
+
+.gameplay-puzzle {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-puzzle .div {
+  background-image: url(./img/Puzzle-select-landscape.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1091px;
+  position: relative;
+  width: 1440px;
+}
+
+.gameplay-puzzle .overlap-group {
+  height: 416px;
+  left: 474px;
+  position: absolute;
+  top: 300px;
+  width: 491px;
+}
+
+.gameplay-puzzle .frame {
+  height: 100px;
+  left: 295px;
+  position: absolute;
+  top: 291px;
+  width: 100px;
+}
+
+.gameplay-puzzle .puzzle-piece {
+  background-image: url(./img/puzzle_piece_w_trans.png);
+  background-size: cover;
+  background-position: center;
+  height: 315px;
+  width: 320px;
+  position: absolute; 
+  left: 110px; /* Adjust this value to move it to the right */
+}
+
+.gameplay-puzzle .text-wrapper {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 136px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 135px;
+  width: 220px;
+}
+
+.gameplay-puzzle .overlap-2 {
+  height: 341px;
+  left: 79px;
+  position: absolute;
+  top: 300px;
+  width: 341px;
+}
+
+.gameplay-puzzle .puzzle-piece-2 {
+  background-image: url(./img/puzzle_piece_w_trans.png);
+  background-size: cover;
+  background-position: center;
+  height: 315px; 
+  width: 320px; 
+}
+
+.gameplay-puzzle .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 135px;
+  width: 220px;
+}
+
+.gameplay-puzzle .overlap-3 {
+  height: 491px;
+  left: 1035px;
+  position: absolute;
+  top: 225px;
+  width: 341px;
+}
+
+.gameplay-puzzle .puzzle-piece-3 {
+  background-image: url(./img/puzzle_piece_w_trans.png);
+  background-size: cover;
+  background-position: center;
+  height: 315px;
+  width: 320px;
+  position: absolute;
+  left: 70px;
+  top: 80px;
+}
+
+.gameplay-puzzle .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 205px;
+  width: 220px;
+}
+
+.gameplay-puzzle .text-wrapper-4 {
+  color: #fffb98;
+  font-family: "Inknut Antiqua-ExtraBold", Helvetica;
+  font-size: 48px;
+  font-weight: 800;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 937px;
+  width: 332px;
+}
+
+/* QuestGuide */
+.quest-guide {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.quest-guide .div {
+  background-image: url(./img/1a6e8bd3-051c-4fcf-b2bd-8e6a7194b127.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1011px;
+  position: relative;
+  width: 1443px;
+}
+
+.quest-guide .overlap-group {
+  height: 720px;
+  left: 137px;
+  position: absolute;
+  top: 291px;
+  width: 897px;
+}
+
+.quest-guide .text-wrapper {
+  color: #fffb98;
+  font-family: "Inknut Antiqua-ExtraBold", Helvetica;
+  font-size: 48px;
+  font-weight: 800;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 46px;
+  width: 332px;
+}
+
+.quest-guide .rectangle {
+  background-color: #3658c4;
+  height: 720px;
+  left: 282px;
+  position: absolute;
+  top: 0;
+  width: 615px;
+}
+
+.quest-guide .each-stage-has-three {
+  color: #000000;
+  font-family: "Inknut Antiqua-ExtraBold", Helvetica;
+  font-size: 20.5px;
+  font-weight: 800;
+  left: 299px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  width: 551px;
+}
+
+.quest-guide .text-wrapper-2 {
+  color: #fffb98;
+  font-family: "Inknut Antiqua-ExtraBold", Helvetica;
+  font-size: 48px;
+  font-weight: 800;
+  left: 556px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 190px;
+  width: 332px;
+}
+/*Gameplay-Door Closed - Start Game Clicking Door(2) (yes walkthrough)*/
+
+.gameplay-door-closed {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-door-closed .div {
+  background-image: url(./img/in-game-landscape.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.gameplay-door-closed .door {
+  height: 522px;
+  left: 126px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.gameplay-door-closed .overlap-group {
+  height: 524px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 316px;
+}
+
+.gameplay-door-closed .frame {
+  background-color: #ffffff;
+  height: 520px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.gameplay-door-closed .rectangle {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-door-closed .rectangle-2 {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 156px;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-door-closed .vector {
+  height: 136px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 156px;
+}
+
+.gameplay-door-closed .img {
+  height: 161px;
+  left: 158px;
+  position: absolute;
+  top: 282px;
+  width: 159px;
+}
+
+.gameplay-door-closed .vector-2 {
+  height: 151px;
+  left: 1px;
+  position: absolute;
+  top: 64px;
+  width: 156px;
+}
+
+.gameplay-door-closed .vector-3 {
+  height: 150px;
+  left: 158px;
+  position: absolute;
+  top: 370px;
+  width: 159px;
+}
+
+.gameplay-door-closed .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 187px;
+  width: 232px;
+}
+
+.gameplay-door-closed .overlap-wrapper {
+  height: 522px;
+  left: 562px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.gameplay-door-closed .overlap-group-wrapper {
+  height: 522px;
+  left: 1013px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+/*Gameplay- Door Open clicking door YES or no (2)*/
+.door-open {
+  background-image: url(./img/in-game-landscape.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.door-open .door {
+  height: 522px;
+  left: 126px;
+  position: absolute;
+  top: 439px;
+  width: 314px;
+}
+
+.door-open .overlap-group {
+  height: 524px;
+  position: relative;
+  top: -1px;
+}
+
+.door-open .frame {
+  background-color: #ffffff;
+  height: 520px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.door-open .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 93px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 226px;
+  width: 118px;
+}
+
+.door-open .rectangle {
+  background-image: url(./img/Rectangle-2-open-2.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 520px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 88px;
+}
+
+.door-open .img {
+  background-image: url(./img/Rectangle-right-open-2.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 520px;
+  left: 215px;
+  position: absolute;
+  top: 0;
+  width: 99px;
+}
+
+.door-open .overlap-wrapper {
+  height: 522px;
+  left: 562px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.door-open .overlap {
+  height: 524px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 316px;
+}
+
+.door-open .div {
+  background-color: #ffffff;
+  height: 520px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.door-open .rectangle-2 {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.door-open .rectangle-3 {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 156px;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.door-open .vector {
+  height: 136px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 156px;
+}
+
+.door-open .vector-2 {
+  height: 161px;
+  left: 158px;
+  position: absolute;
+  top: 282px;
+  width: 159px;
+}
+
+.door-open .vector-3 {
+  height: 151px;
+  left: 1px;
+  position: absolute;
+  top: 64px;
+  width: 156px;
+}
+
+.door-open .vector-4 {
+  height: 150px;
+  left: 158px;
+  position: absolute;
+  top: 370px;
+  width: 159px;
+}
+
+.door-open .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 187px;
+  width: 232px;
+}
+
+.door-open .overlap-group-wrapper {
+  height: 522px;
+  left: 1021px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.door-open .button-bar {
+  height: 288px;
+  left: 325px;
+  position: absolute;
+  top: 52px;
+  width: 806px;
+}
+
+.door-open .overlap-2 {
+  background-image: url(./img/Overall-Heading.jpg);
+  background-size: 100% 100%;
+  height: 288px;
+  position: relative;
+  width: 804px;
+}
+
+.door-open .yes-button {
+  height: 88px;
+  left: 56px;
+  position: absolute;
+  top: 174px;
+  width: 248px;
+}
+
+.door-open .div-wrapper {
+  background-color: #cb5757;
+  border-radius: 123px/44px;
+  height: 88px;
+  position: relative;
+  width: 246px;
+}
+
+.door-open .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 46px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  width: 154px;
+}
+
+.door-open .no-button {
+  height: 88px;
+  left: 490px;
+  position: absolute;
+  top: 174px;
+  width: 248px;
+}
+
+.door-open .p {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 53px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: -40px;
+  width: 698px;
+}
+/*Gameplay-Final Choice Yes(2)*/
+
+.gameplay-final {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-final .door-open-w-yes-or-wrapper {
+  background-color: #ffffff;
+  height: 1024px;
+  width: 1440px;
+}
+
+.gameplay-final .door-open-w-yes-or {
+  background-image: url(./img/Gameplay-Final-Choice-Yes-2.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 1024px;
+  position: relative;
+}
+
+.gameplay-final .door {
+  height: 522px;
+  left: 126px;
+  position: absolute;
+  top: 439px;
+  width: 314px;
+}
+
+.gameplay-final .overlap-group {
+  height: 522px;
+  position: relative;
+}
+
+.gameplay-final .frame {
+  background-color: #ffffff;
+  height: 520px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 314px;
+}
+
+.gameplay-final .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 178px;
+  width: 274px;
+}
+
+.gameplay-final .rectangle {
+  height: 522px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.gameplay-final .img {
+  height: 522px;
+  left: 312px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.gameplay-final .overlap-wrapper {
+  height: 522px;
+  left: 562px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.gameplay-final .overlap {
+  height: 524px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 316px;
+}
+
+.gameplay-final .div {
+  background-color: #ffffff;
+  height: 520px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.gameplay-final .rectangle-2 {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-final .rectangle-3 {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 156px;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-final .vector {
+  height: 136px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 156px;
+}
+
+.gameplay-final .vector-2 {
+  height: 161px;
+  left: 158px;
+  position: absolute;
+  top: 282px;
+  width: 159px;
+}
+
+.gameplay-final .vector-3 {
+  height: 151px;
+  left: 1px;
+  position: absolute;
+  top: 64px;
+  width: 156px;
+}
+
+.gameplay-final .vector-4 {
+  height: 150px;
+  left: 158px;
+  position: absolute;
+  top: 370px;
+  width: 159px;
+}
+
+.gameplay-final .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 187px;
+  width: 232px;
+}
+
+.gameplay-final .overlap-group-wrapper {
+  height: 522px;
+  left: 1047px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+/*Gameplay: Actual Question Page Yes(2)*/
+
+.gameplay-actual {
+  background-color: #055193;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-actual .div-wrapper {
+  background-color: #055193;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.gameplay-actual .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 128px;
+  font-weight: 400;
+  left: 202px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 270px;
+  width: 1036px;
+}
+/*Gameplay- Door Open clicking door YES or no (2)  (no walkthrough) */
+.gameplay-door-open {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-door-open .door-open-wrapper {
+  background-color: #ffffff;
+  height: 1024px;
+  width: 1440px;
+}
+
+.gameplay-door-open .door-open {
+  background-image: url(./img/door-open.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1024px;
+  position: relative;
+}
+
+.gameplay-door-open .door {
+  height: 522px;
+  left: 1021px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.gameplay-door-open .overlap-group {
+  height: 524px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 316px;
+}
+
+.gameplay-door-open .frame {
+  background-color: #ffffff;
+  height: 520px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.gameplay-door-open .rectangle {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-door-open .div {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 156px;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-door-open .vector {
+  height: 136px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 156px;
+}
+
+.gameplay-door-open .img {
+  background-color: white;
+  height: 161px;
+  left: 158px;
+  position: absolute;
+  top: 282px;
+  width: 159px;
+}
+
+.gameplay-door-open .vector-2 {
+  height: 151px;
+  left: 1px;
+  position: absolute;
+  top: 64px;
+  width: 156px;
+}
+
+.gameplay-door-open .vector-3 {
+  height: 150px;
+  left: 158px;
+  position: absolute;
+  top: 370px;
+  width: 159px;
+}
+
+.gameplay-door-open .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 187px;
+  width: 232px;
+}
+
+.gameplay-door-open .overlap-wrapper {
+  height: 522px;
+  left: 574px;
+  position: absolute;
+  top: 442px;
+  width: 314px;
+}
+
+.gameplay-door-open .overlap {
+  height: 524px;
+  position: relative;
+  top: -1px;
+}
+
+.gameplay-door-open .div-wrapper {
+  background-color: #ffffff;
+  height: 520px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.gameplay-door-open .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 93px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 226px;
+  width: 118px;
+}
+
+.gameplay-door-open .rectangle-2 {
+  background-image: url(./img/Rectangle-2-open-2-Photoroom.png-Photoroom.png);
+  background-color: transparent;
+  border: none;
+  height: 524px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 88px;
+}
+
+.gameplay-door-open .rectangle-3 {
+  background-image: url(./img/Rectangle-right-open-2-Photoroom.png-Photoroom.png);
+  background-color: transparent;
+  border: none;
+  height: 524px;
+  left: 215px;
+  position: absolute;
+  top: 0;
+  width: 99px;
+}
+
+.gameplay-door-open .overlap-group-wrapper {
+  height: 522px;
+  left: 125px;
+  position: absolute;
+  top: 442px;
+  width: 318px;
+}
+/* door fully open user has picked no and stuck with choice 2  */
+.gameplay-finalalt {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-finalalt .door-open-w-yes-or-wrapper {
+  background-color: #ffffff;
+  height: 1024px;
+  width: 1440px;
+}
+
+.gameplay-finalalt .door-open-w-yes-or {
+  background-image: url(./img/Gameplay-Final-Choice-No-2.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 1024px;
+  position: relative;
+}
+
+.gameplay-finalalt .door {
+  height: 522px;
+  left: 1047px;
+  position: absolute;
+  top: 439px;
+  width: 318px;
+}
+
+.gameplay-finalalt .overlap-group {
+  height: 524px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 316px;
+}
+
+.gameplay-finalalt .frame {
+  background-color: #ffffff;
+  height: 520px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 314px;
+}
+
+.gameplay-finalalt .rectangle {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-finalalt .div {
+  background-color: #055193;
+  border: 1px solid;
+  border-color: #3d3d3d;
+  box-shadow: inset 20px 4px 30px #ffffff73, inset -20px 4px 30px #ffffff73;
+  height: 524px;
+  left: 156px;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.gameplay-finalalt .vector {
+  height: 136px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 156px;
+}
+
+.gameplay-finalalt .img {
+  height: 161px;
+  left: 158px;
+  position: absolute;
+  top: 282px;
+  width: 159px;
+}
+
+.gameplay-finalalt .vector-2 {
+  height: 151px;
+  left: 1px;
+  position: absolute;
+  top: 64px;
+  width: 156px;
+}
+
+.gameplay-finalalt .vector-3 {
+  height: 150px;
+  left: 158px;
+  position: absolute;
+  top: 370px;
+  width: 159px;
+}
+
+.gameplay-finalalt .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 187px;
+  width: 232px;
+}
+
+.gameplay-finalalt .div-wrapper {
+  background-color: #ffffff;
+  height: 520px;
+  left: 587px;
+  position: absolute;
+  top: 441px;
+  width: 314px;
+}
+
+.gameplay-finalalt .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 178px;
+  width: 274px;
+}
+
+.gameplay-finalalt .overlap-wrapper {
+  height: 522px;
+  left: 100px;
+  position: absolute;
+  top: 441px;
+  width: 318px;
+}
+
+/*  Gameplay: Actual Question Page No(2) */
+
+.gameplay-actual2{
+  background-color: #055193;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.gameplay-actual2 .div-wrapper {
+  background-color: #055193;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.gameplay-actual2 .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 128px;
+  font-weight: 400;
+  left: 202px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 270px;
+  width: 1036px;
+}
